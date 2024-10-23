@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+#const{
+  color: #ffffff;
+}
+
+nav {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+.scrolled {
+  background-color: #24090886 !important;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap:50px;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: small;
+}
+
+
+/* ---------------------------------- */
+
+#section1{
+  height: 80vh;
+}
+
+.custome-slide-height{
+  height: 95vh;
+  object-fit: cover;
+}
+
+
+
+/* --------------------------------- */
+
+#section2{
+  margin-top: 80px;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.about-section h1 {
+  text-align: left;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+
+.about-image {
+  flex-basis: 45%;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Initial slide */
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Smooth transition */
+}
+
+
+.about-image.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.about-text.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.about-image img {
+  width:100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 2%;
+}
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+.about-text {
+  flex-basis: 40%;
+  font-size: 14px;
+  line-height: 1.8;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Initial slide */
+  transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out; /* Smooth transition */
+}
+
+.about-text p {
+  margin-bottom: 20px;
+}
+
+.about-text strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+  }
+
+  .about-image, .about-text {
+      max-width: 100%;
+      margin: 0;
+  }
+
+  .about-image {
+      margin-bottom: 20px;
+  }
+
+}
+  .about-content-2{
+margin-top: 40px
+  }
+
+
+  /* -------------------- */
+
+
+  .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    background-color: white;
+  }
+  
+  .box {
+    flex: 1 1 0%;
+    min-width: 250px;
+    background-color: #e2e2e2;
+    border: 1px solid rgb(214, 214, 214);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+  }
+  .box h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .box p {
+    font-size: 1.2rem;
+  }
+  
+  .image-box {
+    flex: 1 1 45%;
+    min-width: 250px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-box img {
+    width: 80%; /* Make image take full width of the container */
+    height: 80%; /* Ensures image fills the container */
+    object-fit: cover; /* Ensures image covers the box without distortion */
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .box, .image-box {
+      flex: 1 1 100%;
+    }
+  }
+
+/* ------------------------------------ */
+#section2img {
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1558&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  position: sticky;
+  top: 30px;
+  z-index: -1;
+}
+
+#section3 {
+  width: 100%;
+  height: 90vh;
+  background-color: transparent;
+}
+
+.sec3Div1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.serviceCard {
+  width: 350px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 2%;
+  border: 1px solid rgb(214, 214, 214);
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.card-btn {
+ background: none;
+ padding: 10px;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+ border-bottom:1px solid gray ;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sec3Div1 {
+    flex-direction: column;
+  }
+
+  .serviceCard {
+    width: 90%;
+  }
+}
+/* ----------------------- */
+#section4{
+  
+background-color: white;
+margin-bottom:100px;
+}
+
+#section4 h1{
+text-align: center;
+padding: 20px;
+text-decoration: underline;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Media Query for Tablets */
+@media (min-width: 600px) {
+  .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Media Query for Desktops */
+@media (min-width: 900px) {
+  .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* ----------------------- */
+#form{
+  width: 100%;
+  background-image: url("https://cache.marriott.com/content/dam/marriott-renditions/BLRJW/blrjw-kitchen-3310-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*");
+background-color: black;
+padding: 30px;
+}
+
+.containerForm {
+  background-color: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0e0e0e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+}
+
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
