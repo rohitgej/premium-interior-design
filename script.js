@@ -7,7 +7,6 @@ window.addEventListener('scroll', function() {
     } else {
       navbar.classList.remove('scrolled');
     }
-    console.log(navbar);
   });
   
  const slides= document.querySelectorAll(".slide")
@@ -33,4 +32,22 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element);
     });
 });
+
+
+function openModal(src) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImage");
+    
+    modal.style.display = "flex"; // Show modal
+    modalImg.src = src; // Set the modal image to the clicked image
+}
+
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none"; // Hide modal
+}
+
+// Close modal on clicking outside of the modal content
+
+
 

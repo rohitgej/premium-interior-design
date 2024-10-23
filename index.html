@@ -23,18 +23,19 @@
 <!--------------------------------------------------------------->
 
 <body>
-    <nav id="navbar" class="navbar navbar-expand-lg scrolled" data-bs-theme="dark" style="background-color: #24090800; position: fixed ;">
-       
-      <div class="container-fluid  ">
+    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #24090800; position: fixed ;">
+      
+      <div class="container-fluid ">
           <a class="navbar-brand" href="#"> <div class="logo">
             <span class="material-symbols-outlined"> select_all </span>
             Interior Square
         </div>
-      </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </a>  
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+          <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#section2">ABOUT</a>
@@ -55,6 +56,7 @@
 
           </div>
           </div>
+
         </div>
       </nav>
 
@@ -203,19 +205,28 @@
 
             <h1> Gallery</h1>
             <div class="gallery">
-                <div class="gallery-item">
-                    <img src="https://plus.unsplash.com/premium_photo-1684348962314-64fa628992f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://media.istockphoto.com/id/2159808786/photo/green-natural-modern-interior-design-materials-board-with-samples-and-swatches.jpg?s=2048x2048&w=is&k=20&c=QTOYjOBVznwfSDhzmvKGbYe3mhY3GpKgq4Hur-CaG78=" alt="Gallery Image 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 4">
-                </div>
+              <div class="gallery-item" onclick="openModal('https://plus.unsplash.com/premium_photo-1684348962314-64fa628992f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                <img src="https://plus.unsplash.com/premium_photo-1684348962314-64fa628992f0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 1">
             </div>
+            <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item" onclick="openModal('https://media.istockphoto.com/id/2159808786/photo/green-natural-modern-interior-design-materials-board-with-samples-and-swatches.jpg?s=2048x2048&w=is&k=20&c=QTOYjOBVznwfSDhzmvKGbYe3mhY3GpKgq4Hur-CaG78=')">
+                <img src="https://media.istockphoto.com/id/2159808786/photo/green-natural-modern-interior-design-materials-board-with-samples-and-swatches.jpg?s=2048x2048&w=is&k=20&c=QTOYjOBVznwfSDhzmvKGbYe3mhY3GpKgq4Hur-CaG78=" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1463797221720-6b07e6426c24?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+                <img src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gallery Image 4">
+            </div>
+            </div>
+
+            <div id="myModal" class="modal">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+                  <img id="modalImage" src="" alt="Modal Image">
+              </div>
+          </div>
+          
+
           </section>
 
         <section id="form">
